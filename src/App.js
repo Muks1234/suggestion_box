@@ -24,7 +24,7 @@ render(){
     <div className="App">
       <div>
         <p className="welcome_text">Welcome to Mollelwa's new app</p>
-        
+        <p className="welcome_text">success launching to surge</p>
       </div>
     </div>
   );
