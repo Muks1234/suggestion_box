@@ -42,7 +42,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --noknok.surge.sh"
+      "pre-push": "surge --project ./ --domain noknok.surge.sh"
     }
   }
 }
