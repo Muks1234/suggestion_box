@@ -11,7 +11,14 @@ state =   {
   }
 
   componentDidMount(){
-
+      /*
+      appId = clientId = 3107230376203229
+      appSecret = clientSecret = 3f837db9a51060375215cea194bf6200
+      redirectURI = 
+      URLENCODE(redirectURI) =
+      
+      tokengit = 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
+      */ 
 
   }
 
