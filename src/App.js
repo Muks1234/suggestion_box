@@ -10,7 +10,8 @@ class App extends Component {
   state = {
     logo_on:'',
     setup:'',
-    joke:''
+    joke:'',
+    error:''
   }
 
   next = () => {
@@ -67,6 +68,7 @@ https.get(`${baseURL}/joke/${categories.join(",")}?${params.join("&")}`, res => 
         // On error, log to console
         console.error(`Error: ${err}`);
         console.log("king loss");
+        this.setState({error:"network error :("});
     });
 });
   }
@@ -80,17 +82,19 @@ componentDidMount(){
 render(){
   return (
     <div className="App">
-      <div>
+      {(this.state.error)?<p>{this.state.error}</p>:<div>
         {this.state.logo_on && <p className="welcome_text">Noknok</p>}
+         <div className ="main_content">
          <p className="joke">{this.state.setup}</p>
         <p className="joke">{this.state.joke}</p>
         {!this.state.joke && <img src={ZZ5H} alt="loading..." />}
       </div>
       <div>
         {this.state.joke && <button onClick ={()=>this.next()}>
-          next {'>>'}
+          next {'>'}
         </button>}
       </div>
+         </div>}
     </div>
   );
 }
