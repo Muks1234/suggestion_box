@@ -23,8 +23,10 @@ render(){
   return (
     <div className="App">
       <div>
-        <p className="welcome_text">Welcome to Mollelwa's new app</p>
-        <p className="welcome_text">success launching to surge</p>
+        <p className="welcome_text">Welcome to noknok</p>
+        <p className="welcome_text">success deploying to surge yay!</p>
+        <p className="welcome_text">Have a great day, I'm under construction</p>
+
       </div>
     </div>
   );
