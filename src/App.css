@@ -5,6 +5,7 @@
 .welcome_text{
   font-weight: bold;
   font-size: 20px;
+  font-family: cursive;
 }
 
 .App-logo {
@@ -41,3 +42,19 @@
     transform: rotate(360deg);
   }
 }
+
+.joke {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: cursive;
+}
+
+img {
+  height: 15px;
+}
+
+button{
+  font-size: 16px;
+}
+
+/* decorations for buttions*/
